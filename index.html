@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="Description" content="Homepage for pieces of blonde, an Etsy shop where I sell hand-crafted polymer clay earrings.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pieces of Blonde</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+        <br>
+        <br>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Pieces of Blonde logo" class="logo" style = "margin: 0px;">
+            </a>        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://www.etsy.com/shop/piecesofblonde">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr class="dividers"/>
+
+        <div class="accent-box">
+            <img src="images/womanwearing.jpg" alt="accent-image" class="accent">
+        </div>
+
+        <div class="container-1">
+            
+            <div class="link-box">
+                <a href="https://www.etsy.com/shop/piecesofblonde">
+                <img src="images/shop.png" alt="shop_button" class="link">
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="faq.html">
+                <img src="images/faq.png" alt="faq_button" class="link">
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="about.html">
+                <img src="images/about_me.png" alt="about_me_button" class="link">
+                </a>
+            </div>
+
+        </div>
+
+        <hr class="dividers"/>
+
+        <div class="gallery_div">
+
+            <div class="gallery">
+                <img class="myImg" src="images/goldenhour.JPG" alt="Golden Hour">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/gowithgrace.jpg" alt="Go With Grace">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/reisandshine.jpg" alt="Rei's & Shine">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/boldtype.jpg" alt="Bold Type">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/justforyou.jpg" alt="Just For You - Custom Assortment">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/letitgo.jpg" alt="Let It Go">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/theabbeymini.jpg" alt="The Abbie Mini Assortment">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/thesidra.jpg" alt="The Sidra">
+            </div>
+        
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Clicked_gallery_img">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = $('.myImg');
+            var modalImg = $("#img01");
+            var captionText = document.getElementById("caption");
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+        </script>
+
+        <hr class="dividers"/>
+
+        <footer style="display: block;" class="disclaimer">
+            <h4>All designs and photos are property of piecesofblonde</h4>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,471 @@
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    background-color: #ffefd6bf;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+img {
+    max-width: 55%;
+    margin-bottom: 1.5em;
+}
+
+.link:hover {opacity: 0.8;}
+
+.logo {
+    width: 100%;
+    max-width: 768px;
+    height: 75%; 
+}
+
+.accent {
+    padding-top: 1em;
+}
+
+/* Content dividers
+==================*/
+.faq_dividers {
+    border: none;
+    background-color: #ffa07a63;
+    height: 1px;
+}
+
+.dividers {
+    border: none;
+    background-color: #ffa07a63;
+    height: 1px;
+}
+
+/* Header
+==================*/
+
+header {
+    left: 0;
+    right: 0;
+    margin: .2em;
+}
+
+nav ul {
+    margin: 0;
+    padding: .5em;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: .5em;
+    color: #df6a3cde;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #f4a4a4bd;
+}
+
+
+
+/* Flexbox
+==================*/
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* About/FAQ
+==================*/
+h3 {
+    color: #a8512fde;
+}
+
+.about_me {
+    color: #df6a3cde;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Footer
+==================*/
+
+footer {
+    text-align: right;
+    padding: .5em;
+    color: #4644448a;
+}
+
+/* Contact form
+==================*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #f5a47e;
+    font-size: 0.875em;
+}
+  
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #a8512fde;
+}
+  
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #f5a47e;
+    font-size: 0.875em;
+}
+  
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #a8512fde;
+}
+  
+input::placeholder, textarea::placeholder {
+    color: #f5a47e;
+    font-size: 0.875em;
+}
+  
+input:focus::placeholder, textarea::focus:placeholder {
+    color: #a8512fde;
+}
+  
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #f5a47e;
+    font-size: 0.875em;
+}
+  
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #a8512fde;
+}
+  
+/* on hover placeholder */
+  
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #a8512fde;
+    font-size: 0.875em;
+}
+  
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #f5a47e;
+}
+  
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #a8512fde;
+    font-size: 0.875em;
+}
+  
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #f5a47e;
+}
+  
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #a8512fde;
+    font-size: 0.875em;
+}
+  
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #f5a47e;
+}
+  
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #a8512fde;
+    font-size: 0.875em;
+}
+  
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #f5a47e;
+}
+
+.g-recaptcha {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.form_header {
+    margin-top: 50px ;
+    font-size: 2.2em;
+    text-align: center;
+    letter-spacing: 7px;
+    color: #f5a47e;
+}
+
+input {
+    font-family: 'Proxima Nova';
+    font-size: 0.875em;
+    font-weight: 600;
+    width: 50%;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #a8512fde;
+    
+    border: solid 1px #f5a47e;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+  
+input:hover {
+    background: #ffa07a63;
+    color: #a8512fde;
+}
+
+textarea {
+    width: 50%;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #a8512fde;
+    font-family: 'Proxima Nova';
+    font-size: 0.875em;
+    font-weight: 600;
+    
+    border: solid 1px #f5a47e;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+  
+textarea:hover {
+    background: #ffa07a63;
+    color: #a8512fde;
+}
+  
+#submit {
+    width: 50%;
+    
+    padding: 0;
+    margin: 5px 0px 0px 0px;
+    
+    font-family: 'Proxima Nova';
+    font-size: 0.875em;
+    color: #f5a47e;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #f5a47e;
+}
+  
+#submit:hover {
+    color: #f4a4a4bd;
+}
+
+/* Autofill
+=================*/
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffefd6bf inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #a8512fde !important;
+}
+
+/* Modals
+=================*/
+
+div.gallery img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media queries
+=================*/
+
+@media only screen and (max-width: 500px) {
+    footer{
+        font-size: 58%;
+    }
+    nav a {
+        font-size: .9rem;
+    }
+    img {
+        max-width: 100%;
+    }
+    body{
+        margin-top: 0;
+    }
+    .gallery_div {
+        display: inline-block;
+        width: 100%;
+    }
+    .gallery {
+        display: inline-block;
+        margin: 5px;
+        width: 45%;
+    }
+    div.gallery img {
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    input, textarea, #submit {
+        width: 75%;
+    }
+    .modal-content {
+        width: 100%;
+    }
+    .g-recaptcha {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+}
+
+@media only screen and (min-width: 500px) {
+
+    nav a {
+        font-size: 1em;
+    }
+    img {
+        max-width: 100%;
+    }
+    .gallery_div {
+        display: inline-block;
+        width: 100%;
+    }
+    .gallery {
+        display: inline-block;
+        margin: 5px;
+        width: 23%;
+    }
+    div.gallery img {
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+
+    .dividers{
+        width: 85%;
+    }
+    .about_me{
+        max-width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body{
+        outline: 1px solid #ffa07a63;
+        margin-top: 2em;
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+    .gallery_div {
+        display: inline-block;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    body{
+        margin-left: 15em;
+        margin-right: 15em;
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    img{
+        max-width: 75%;
+    }
+    body{
+        margin-left: 20em;
+        margin-right: 20em;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+@media only screen and (min-width: 2550px) {
+    body{
+        margin-left: 30em;
+        margin-right: 30em;
+    }
+    .about_me {
+        font-size: 35px;
+    }
+    .gallery_div {
+        display: inline-block;
+        width: 100%;
+    }
+}

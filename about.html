@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="Description" content="Homepage for pieces of blonde, an Etsy shop where I hand-craft polymer clay earrrings.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pieces of Blonde</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+        <br>
+        <br>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Pieces of Blonde logo" class="logo">
+            </a>        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.etsy.com/shop/piecesofblonde">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr class="dividers"/>
+
+        <div class="accent-box">
+            <img src="images/savannah.jpg" alt="accent-image" class="accent">
+        </div>
+
+
+        <article class="about_me">
+            <h1 style="color: #a8512fde;">Hi, friends!</h1>
+            <p>I’m Savannah, the blonde gal behind the scenes of Pieces of Blonde!
+            What started as a fun quarantine hobby has quickly turned to the most fun I’ve ever had!
+            I have always been a creative person, and this has provided an outlet for all things fun, colorful, and exciting. <br> <br>
+            I was born & raised in Georgia but currently live outside of Chicago with my fiancé, Zack, and our 2 pupps, Charlie & Beau. 
+            I am a full time first year law student & I am so thankful to you all for every ounce of love and support during this busy, 
+            exhausting, beautiful season of life. I can’t wait to see what the future has in store for Pieces of Blonde!</p>
+        </article>
+
+        <hr class="dividers"/>
+
+        <div class="gallery_div">
+
+            <div class="gallery">
+                <img class="myImg" src="images/goldenhour.JPG" alt="Golden Hour">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/gowithgrace.jpg" alt="Go With Grace">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/reisandshine.jpg" alt="Reis And Shine">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/boldtype.jpg" alt="Bold Type">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/justforyou.jpg" alt="Just For You - Custom Assortment">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/letitgo.jpg" alt="Let It Go">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/theabbeymini.jpg" alt="The Abbie Mini Assortment">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/thesidra.jpg" alt="The Sidra">
+            </div>
+        
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Clicked_gallery_img">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = $('.myImg');
+            var modalImg = $("#img01");
+            var captionText = document.getElementById("caption");
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+        </script>
+
+        <hr class="dividers"/>
+
+        <footer style="display: block;" class="disclaimer">
+            <h4>All designs and photos are property of piecesofblonde</h4>
+        </footer>
+
+
+    </body>
+
+</html>

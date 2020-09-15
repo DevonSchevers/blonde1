@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="Description" content="Homepage for pieces of blonde, an Etsy shop where I hand-craft polymer clay earrrings.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pieces of Blonde</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+        <br>
+        <br>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Pieces of Blonde logo" class="logo">
+            </a>        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.etsy.com/shop/piecesofblonde">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr class="dividers"/>
+        <h1 style="color: #d18765;">FAQ</h1>
+        <article class="about_me">
+            <p>
+            <h3>What are the earrings made of?</h3>
+            All Pieces of Blonde earrings are made of 100% polymer clay (aside from any brass findings or accents.)
+            <br>
+            <hr class="faq_dividers"/>
+   
+            <h3> Are patterns painted onto the earrings?</h3>
+            All patterns are handcrafted using clay. No earring is painted. This means that no two earring patterns will be exactly alike, making it special for each owner :) 
+            <br>
+            <hr class="faq_dividers"/>
+
+            <h3>What types of earring posts are used? I have allergies and/or sensitive skin.</h3>
+            Each earring is set or hung on 18K gold plated, hypo-allergenic surgical steel hooks or studs. They are lead and nickel free, and should not cause irritation.
+            <br>
+            <hr class="faq_dividers"/>
+
+            <h3>How heavy are the earrings?</h3>
+            The best part of Pieces of Blonde is that each earring is ULTRA lightweight! I constantly have customers send me private messages commenting on how surprised they are by how lightweight my earrings are. YES, even the large statement ones :) 
+            <br>
+            <hr class="faq_dividers"/>
+
+            <h3>Does Pieces of Blonde ship internationally?</h3>
+            Right now, we only ship within the U.S. (including Hawaii & Alaska).
+            <br>
+            <hr class="faq_dividers"/>
+
+            <h3>How are the earrings packaged?</h3>
+            Each earring is shipped inside a small box with padding and mailed in a poly-mailer. </p>
+        </article>
+
+        <hr class="dividers"/>
+
+        <div class="gallery_div">
+
+            <div class="gallery">
+                <img class="myImg" src="images/goldenhour.JPG" alt="Golden Hour">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/gowithgrace.jpg" alt="Go With Grace">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/reisandshine.jpg" alt="Rei's & Shine">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/boldtype.jpg" alt="Bold Type">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/justforyou.jpg" alt="Just For You - Custom Assortment">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/letitgo.jpg" alt="Let It Go">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/theabbeymini.jpg" alt="The Abbie Mini Assortment">
+            </div>
+
+            <div class="gallery">
+                <img class="myImg" src="images/thesidra.jpg" alt="The Sidra">
+            </div>
+        
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Clicked_gallery_img">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = $('.myImg');
+            var modalImg = $("#img01");
+            var captionText = document.getElementById("caption");
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+        </script>
+
+        <hr class="dividers"/>
+
+        <footer style="display: block;" class="disclaimer">
+            <h4>All designs and photos are property of piecesofblonde</h4>
+        </footer>
+
+    </body>
+
+</html>
